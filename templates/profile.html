@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Profile - Voice Bot{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Profile</h2>
+    <p>Name: {{ user.name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Joined: {{ user.created_at }}</p>
+    <p>Total Chats: {{ chat_count }}</p>
+</div>
+{% endblock %}
